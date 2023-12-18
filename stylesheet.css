@@ -2,15 +2,23 @@ h1{
     color: pink;
     text-align: center;
 }
-.dark-mode {
+body {
     background-color: black;
     color: white;
 }
-.dark-mode button{
-    color: rgb(255, 255, 255);
-    background: black;
-        
+button{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);    
 }
+.light-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.light-mode button{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);    
+}
+
 button{
     float: right;
     margin-right: 20px;
