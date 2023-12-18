@@ -2,7 +2,16 @@ h1{
     color: pink;
     text-align: center;
 }
-body{
+.dark-mode {
     background-color: black;
     color: white;
+}
+.dark-mode button{
+    color: rgb(255, 255, 255);
+    background: black;
+        
+}
+button{
+    float: right;
+    margin-right: 20px;
 }
