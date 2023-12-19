@@ -12,6 +12,11 @@ const OvenNumbers = [40, 60];
 
 const CabinetsNumbers = [100, 50];
 
+const BlindNumbers = [
+    [5,8],
+    [8,10],
+];
+
 function changeMode(){
     let element = document.body;
     element.classList.toggle("dark-mode");
@@ -285,9 +290,9 @@ function resetForm() {
 
     // Reset size of blinds
     blindsSize.forEach(radio => {
-        radio.checked = radio.value === "5";
+        radio.checked = radio.value === "0";
     });
-    blindsSizevalue = 5;
+    blindsSizevalue = 0;
 
     // Reset how dirty are blinds
     blindsLevel.forEach(radio => {
@@ -339,7 +344,7 @@ function getQuote(){
         (squareFeet * Values[typeOfCleaningvalue][levelOfDirtyvalue]) * frequencyvalue
       ) +
       distanceAwayvalue + (kitchensvalue * 50) + (windowsvalue * 5) +
-      (blindsvalue * blindsSizevalue) +//add blindLevel here after asking 
+      (blindsvalue * BlindNumbers[blindsSizevalue][blindsLevelvalue]) +//add blindLevel here after asking 
       (fridgesvalue * Refridgerator[fridgeSizevalue][fridgeLevelvalue]) +
       (ovensvalue * OvenNumbers[ovenLevelvalue]) +
       (washerDryervalue * 50) +
