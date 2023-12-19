@@ -13,7 +13,7 @@
         <button onclick="changeMode()" id="modeText" class="modeButton">⋆⁺₊⋆ ☾ ⋆⁺₊⋆</button>
         <div class="firstRow">
             <div class="collumn">
-                <input type="text" placeholder="Square feet" id="">
+                <input type="text" placeholder="Square feet" id="" onkeypress="return isNumberKey(event)">
                 <h4>Type of Cleaning</h4>
                 
                 <div>
@@ -63,7 +63,7 @@
             </div>
             <div class="collumn">
                 <h4>Default 1 Kitchens</h4>
-                <input type="text" placeholder="Kitchens" id="">
+                <input type="text" placeholder="Kitchens" id="" onkeypress="return isNumberKey(event)">
                 <h4>Do they have children</h4>
                 <div>
                     <input type="radio" name="isChildren" id="yes">
@@ -83,13 +83,13 @@
                     <label for="no">No</label>
                 </div>
                 <h4>Blinds</h4>
-                <input type="text" placeholder="Blinds" id="">
+                <input type="text" placeholder="Blinds" id="" onkeypress="return isNumberKey(event)">
                 <h4>Windows</h4>
-                <input type="text" placeholder="Windows" id="">
+                <input type="text" placeholder="Windows" id="" onkeypress="return isNumberKey(event)">
             </div>
             <div class="collumn">
                 <h4>Default 0 Fridges</h4>
-                <input type="text" placeholder="Fridges" id="">
+                <input type="text" placeholder="Fridges" id="" onkeypress="return isNumberKey(event)">
                 <h4>Size of Fridge</h4>
                 <div>
                     <input type="radio" name="sizeFridge" id="small">
@@ -129,7 +129,7 @@
             </div>
             <div class="collumn">
                 <h4>Default 0 Ovens</h4>
-                <input type="text" placeholder="Ovens" id="">
+                <input type="text" placeholder="Ovens" id="" onkeypress="return isNumberKey(event)">
                 <h4>How dirty is Oven</h4>
                 <div>
                     <input type="radio" name="dirtyOven" id="extra">
@@ -177,8 +177,8 @@
                     <input type="radio" name="emptyCabinets" id="no">
                     <label for="no">No</label>
                 </div>
-                <button class="quoteButton">Quote</button>
-                <h3>Enter Square Feet</h3>
+                <button class="quoteButton" onclick="getQuote()">Quote</button>
+                <h3 id="Total">Enter Square Feet</h3>
             </div>
         </div>
         <!--just a little test-->
