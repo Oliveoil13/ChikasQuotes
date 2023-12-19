@@ -82,47 +82,47 @@
                     <label for="no">No</label>
                 </div>
                 <h4>Blinds</h4>
-                <input type="text" placeholder="Blinds" id="" onkeypress="return isNumberKey(event)">
+                <input type="text" placeholder="Blinds" id="Blinds" onkeypress="return isNumberKey(event)">
                 <h4>Windows</h4>
-                <input type="text" placeholder="Windows" id="" onkeypress="return isNumberKey(event)">
+                <input type="text" placeholder="Windows" id="Windows" onkeypress="return isNumberKey(event)">
             </div>
             <div class="collumn">
                 <h4>Default 0 Fridges</h4>
-                <input type="text" placeholder="Fridges" id="" onkeypress="return isNumberKey(event)">
+                <input type="text" placeholder="Fridges" id="Fridges" onkeypress="return isNumberKey(event)">
                 <h4>Size of Fridge</h4>
                 <div>
-                    <input type="radio" name="sizeFridge" id="small">
+                    <input type="radio" name="sizeFridge" id="small" value="0">
                     <label for="small">Small</label>
                 </div>
                 <div>
-                    <input type="radio" name="sizeFridge" id="normal" checked>
+                    <input type="radio" name="sizeFridge" id="normal" value="1" checked>
                     <label for="normal">Normal</label>
                 </div>
                 <h4>How dirty is fridge</h4>
                 <div>
-                    <input type="radio" name="dirtyFridge" id="extra">
+                    <input type="radio" name="dirtyFridge" id="extra" value="1">
                     <label for="extra">Extra Dirty</label>
                 </div>
                 <div>
-                    <input type="radio" name="dirtyFridge" id="normal" checked>
+                    <input type="radio" name="dirtyFridge" id="normal" value="0" checked>
                     <label for="normal">Normal</label>
                 </div>
                 <h4>Size of Blinds</h4>
                 <div>
-                    <input type="radio" name="sizeBlinds" id="large">
+                    <input type="radio" name="sizeBlinds" id="large" value="8">
                     <label for="large">Large</label>
                 </div>
                 <div>
-                    <input type="radio" name="sizeBlinds" id="normal" checked>
+                    <input type="radio" name="sizeBlinds" id="normal" value="5" checked>
                     <label for="normal">Normal</label>
                 </div>
                 <h4>How Blinds</h4>
                 <div>
-                    <input type="radio" name="dirtyBlinds" id="extra">
+                    <input type="radio" name="dirtyBlinds" id="extra" value="1">
                     <label for="extra">Extra Dirty</label>
                 </div>
                 <div>
-                    <input type="radio" name="dirtyBlinds" id="normal" checked>
+                    <input type="radio" name="dirtyBlinds" id="normal" value="0" checked>
                     <label for="normal">Normal</label>
                 </div>
             </div>
@@ -131,49 +131,49 @@
                 <input type="text" placeholder="Ovens" id="Ovens" onkeypress="return isNumberKey(event)">
                 <h4>How dirty is Oven</h4>
                 <div>
-                    <input type="radio" name="dirtyOven" id="extra">
+                    <input type="radio" name="dirtyOven" id="extra" value="1">
                     <label for="extra">Extra Dirty</label>
                 </div>
                 <div>
-                    <input type="radio" name="dirtyOven" id="normal" checked>
+                    <input type="radio" name="dirtyOven" id="normal" value="0" checked>
                     <label for="normal">Normal</label>
                 </div>
                 <h4>Washer and Dryer Clean</h4>
                 <div>
-                    <input type="radio" name="washer&dryer" id="yes">
+                    <input type="radio" name="washer&dryer" id="yes" value="1">
                     <label for="yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="washer&dryer" id="no" checked>
+                    <input type="radio" name="washer&dryer" id="no" value="0" checked>
                     <label for="no">No</label>
                 </div>
                 <h4>Dish Washer deep clean</h4>
                 <div>
-                    <input type="radio" name="cleanDishWasher" id="yes">
+                    <input type="radio" name="cleanDishWasher" id="yes" value="1">
                     <label for="yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="cleanDishWasher" id="no" checked>
+                    <input type="radio" name="cleanDishWasher" id="no" value="0" checked>
                     <label for="no">No</label>
                 </div>
             </div>
             <div class="collumn">
                 <h4>Cabinets Inside</h4>
                 <div>
-                    <input type="radio" name="cleanCabinets" id="yes">
+                    <input type="radio" name="cleanCabinets" id="yes" value="1">
                     <label for="yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="cleanCabinets" id="no" checked>
+                    <input type="radio" name="cleanCabinets" id="no" value="0" checked>
                     <label for="no">No</label>
                 </div>
                 <h4>Cabinets Empty</h4>
                 <div>
-                    <input type="radio" name="emptyCabinets" id="yes" checked>
+                    <input type="radio" name="emptyCabinets" id="yes" value="1" checked>
                     <label for="yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" name="emptyCabinets" id="no">
+                    <input type="radio" name="emptyCabinets" id="no" value="0">
                     <label for="no">No</label>
                 </div>
             </div>
@@ -182,9 +182,12 @@
                 <input type="text" placeholder="Square feet" id="squareFeet" onkeypress="return isNumberKey(event)">
                 <button class="quoteButton" onclick="getQuote()">Quote</button>
                 <h3 id="Total">Enter Square Feet</h3>
+                <p></p>
+                <button onclick="resetForm()">Reset</button>
+
             </div>
         </div>
-        <!--just a little test-->
+        
   
     <script src="aCactus.js"></script>
     </body>
