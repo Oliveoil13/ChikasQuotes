@@ -1,3 +1,9 @@
+const Values = [
+    ['Normal', .10, .215, .32, .46, .54],
+    ['Deep', .20, .46, .68, .75 , .82]
+
+];
+
 function changeMode(){
     let element = document.body;
     element.classList.toggle("dark-mode");
@@ -29,7 +35,7 @@ squareFeetEntry.addEventListener("input", () =>{
 
 //getting type of cleanig value
 let typeOfCleaning = document.querySelectorAll('input[name="typeOfCleaning"]');
-let typeOfCleaningvalue = 1;
+let typeOfCleaningvalue = 0;
 
 typeOfCleaning.forEach(radio => {
     radio.addEventListener("change", () => {
@@ -73,7 +79,7 @@ kitchens.addEventListener("input", () => {
 });
 //do they have kids
 let isChildren = document.querySelectorAll('input[name="isChildren"]');
-let isChildrenvalue = 1;
+let isChildrenvalue = 0;
 
 isChildren.forEach(radio => {
     radio.addEventListener("change", () => {
@@ -83,7 +89,7 @@ isChildren.forEach(radio => {
 });
 //do they have pets
 let isPets = document.querySelectorAll('input[name="isPets"]');
-let isPetsvalue = 1;
+let isPetsvalue = 0;
 
 isPets.forEach(radio => {
     radio.addEventListener("change", () => {
@@ -209,6 +215,7 @@ emptyCabinets.forEach(radio => {
 
 //math for the quote
 function getQuote(){
-    let quote = "$" + kitchensvalue;
+    
+    let quote = "$" + (squareFeet * Values[typeOfCleaningvalue][levelOfDirtyvalue]);
     document.getElementById("Total").innerHTML = quote;
 }
