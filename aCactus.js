@@ -341,7 +341,7 @@ function getQuote(){
       distanceAwayvalue + (kitchensvalue * 50) + (windowsvalue * 5) +
       (blindsvalue * blindsSizevalue) +//add blindLevel here after asking 
       (fridgesvalue * Refridgerator[fridgeSizevalue][fridgeLevelvalue]) +
-      (ovensvalue * ovenLevelvalue) +
+      (ovensvalue * OvenNumbers[ovenLevelvalue]) +
       (washerDryervalue * 50) +
       (cleanDishervalue * 30) +
       (cleanCabinetsvalue * CabinetsNumbers[emptyCabinetsvalue])
