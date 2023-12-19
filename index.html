@@ -9,7 +9,179 @@
     </head>
     <body> 
         <h1>Chikas Quotes</h1>
-        <button onclick="changeMode()" id="modeText">๋࣭⭑☁. ☀︎ ๋࣭ ☁.๋࣭⭑</button>
+        <button>Home</button>
+        <button onclick="changeMode()" id="modeText" class="modeButton">⋆⁺₊⋆ ☾ ⋆⁺₊⋆</button>
+        <div class="firstRow">
+            <div class="collumn">
+                <input type="text" placeholder="Square feet" id="">
+                <h4>Type of Cleaning</h4>
+                
+                <div>
+                    <input type="radio" name="typeOfCleaning" id="deep" value="2">
+                    <label for="deep">Deep</label>
+                </div>
+                <div>            
+                    <input type="radio" name="typeOfCleaning" id="regular" value="1" checked>
+                    <label for="regular">Regular</label>
+                </div>
+                <h4>Level of Dirty</h4>
+                <div>            
+                    <input type="radio" name="Level" id="first" value="1" checked>
+                    <label for="first">1</label>
+                </div>
+                <div>
+                    <input type="radio" name="Level" id="second" value="2">
+                    <label for="second">2</label>
+                </div>
+                <div>
+                    <input type="radio" name="Level" id="third" value="3">
+                    <label for="third">3</label>
+                </div>
+                <h4>Frequency</h4>
+                <select name="frequency" id="frequency">
+                    <option value="1" selected>only once</option>
+                    <option value=".80">weekly</option>
+                    <option value=".70">twice a week</option>
+                    <option value=".60">thrice a week</option>
+                    <option value=".50">4 in a week</option>
+                </select>
+                <div>
+                    <h4>Distance in Miles</h4><!--default set to 0-->
+                    <div>            
+                        <input type="radio" name="Distance" id="near" value="0" checked>
+                        <label for="near">>50</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Distance" id="apart" value="50">
+                        <label for="apart">50-70</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Distance" id="far" value="150">
+                        <label for="far">70-100</label>
+                    </div>
+                </div>
+            </div>
+            <div class="collumn">
+                <h4>Default 1 Kitchens</h4>
+                <input type="text" placeholder="Kitchens" id="">
+                <h4>Do they have children</h4>
+                <div>
+                    <input type="radio" name="isChildren" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="isChildren" id="no" checked>
+                    <label for="no">No</label>
+                </div>
+                <h4>Are There Pets</h4>
+                <div>
+                    <input type="radio" name="isPets" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="isPets" id="no" checked>
+                    <label for="no">No</label>
+                </div>
+                <h4>Blinds</h4>
+                <input type="text" placeholder="Blinds" id="">
+                <h4>Windows</h4>
+                <input type="text" placeholder="Windows" id="">
+            </div>
+            <div class="collumn">
+                <h4>Default 0 Fridges</h4>
+                <input type="text" placeholder="Fridges" id="">
+                <h4>Size of Fridge</h4>
+                <div>
+                    <input type="radio" name="sizeFridge" id="small">
+                    <label for="small">Small</label>
+                </div>
+                <div>
+                    <input type="radio" name="sizeFridge" id="normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+                <h4>How dirty is fridge</h4>
+                <div>
+                    <input type="radio" name="dirtyFridge" id="extra">
+                    <label for="extra">Extra Dirty</label>
+                </div>
+                <div>
+                    <input type="radio" name="dirtyFridge" id="normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+                <h4>Size of Blinds</h4>
+                <div>
+                    <input type="radio" name="sizeBlinds" id="large">
+                    <label for="large">Large</label>
+                </div>
+                <div>
+                    <input type="radio" name="sizeBlinds" id="normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+                <h4>How Blinds</h4>
+                <div>
+                    <input type="radio" name="dirtyBlinds" id="extra">
+                    <label for="extra">Extra Dirty</label>
+                </div>
+                <div>
+                    <input type="radio" name="dirtyBlinds" id="normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+            </div>
+            <div class="collumn">
+                <h4>Default 0 Ovens</h4>
+                <input type="text" placeholder="Ovens" id="">
+                <h4>How dirty is Oven</h4>
+                <div>
+                    <input type="radio" name="dirtyOven" id="extra">
+                    <label for="extra">Extra Dirty</label>
+                </div>
+                <div>
+                    <input type="radio" name="dirtyOven" id="normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+                <h4>Washer and Dryer Clean</h4>
+                <div>
+                    <input type="radio" name="washer&dryer" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="washer&dryer" id="no" checked>
+                    <label for="no">No</label>
+                </div>
+                <h4>Dish Washer deep clean</h4>
+                <div>
+                    <input type="radio" name="cleanDishWasher" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="cleanDishWasher" id="no" checked>
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div class="collumn">
+                <h4>Cabinets Inside</h4>
+                <div>
+                    <input type="radio" name="cleanCabinets" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="cleanCabinets" id="no" checked>
+                    <label for="no">No</label>
+                </div>
+                <h4>Cabinets Empty</h4>
+                <div>
+                    <input type="radio" name="emptyCabinets" id="yes" checked>
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="emptyCabinets" id="no">
+                    <label for="no">No</label>
+                </div>
+                <button class="quoteButton">Quote</button>
+                <h3>Enter Square Feet</h3>
+            </div>
+        </div>
+  
     <script src="aCactus.js"></script>
     </body>
 </html>

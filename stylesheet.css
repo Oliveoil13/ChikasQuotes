@@ -1,25 +1,45 @@
 h1{
+    font-family: Calibri;
     color: pink;
     text-align: center;
 }
 body {
+  
+    background-color: white;
+    color: black;
+}
+button{
+    background: black; 
+    color: white;   
+}
+.dark-mode {
     background-color: black;
     color: white;
 }
-button{
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);    
-}
-.light-mode {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-.light-mode button{
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);    
+.dark-mode button{
+    background: white; 
+    color: black;    
 }
 
-button{
+.modeButton{
     float: right;
     margin-right: 20px;
+}
+.quoteButton{
+    margin-top: 40px;
+    background-color: pink;
+    color: black;
+}
+.collumn{
+    display: flex;
+    flex-flow: column;
+    width: 100px;
+    height: 500px;
+    margin: 20px;
+    
+}
+.firstRow{
+    display: flex;
+    flex-flow: inline;
+
 }
