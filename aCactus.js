@@ -343,7 +343,7 @@ function getQuote(){
     let quote = (
         (squareFeet * Values[typeOfCleaningvalue][levelOfDirtyvalue]) * frequencyvalue
       ) +
-      distanceAwayvalue + (kitchensvalue * 50) + (windowsvalue * 5) +
+      distanceAwayvalue + ((kitchensvalue - 1) * 50) + (windowsvalue * 5) +
       (blindsvalue * BlindNumbers[blindsSizevalue][blindsLevelvalue]) +//add blindLevel here after asking 
       (fridgesvalue * Refridgerator[fridgeSizevalue][fridgeLevelvalue]) +
       (ovensvalue * OvenNumbers[ovenLevelvalue]) +
