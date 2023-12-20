@@ -25,6 +25,10 @@ button{
     float: right;
     margin-right: 20px;
 }
+.resetButton{
+    float: right;
+    margin-right: 20px;
+}
 .quoteButton{
     margin-top: 40px;
     background-color: pink;
