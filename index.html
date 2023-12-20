@@ -161,6 +161,9 @@
                 </div>
             </div>
             <div class="collumn">
+                <h4>Please Enter Square Feet</h4>
+                <input type="text" placeholder="Square feet" id="squareFeet" onkeypress="return isNumberKey(event)">
+                
                 <h4>Cabinets Inside</h4>
                 <div>
                     <input type="radio" name="cleanCabinets" id="yes" value="1">
@@ -180,12 +183,11 @@
                     <label for="no">No</label>
                 </div>
             </div>
-            <div class="collumn">
-                <h4>Square Feet</h4>
-                <input type="text" placeholder="Square feet" id="squareFeet" onkeypress="return isNumberKey(event)">
+            <div class="collumnEnd">
+                
+                <h3 id="Total" class="quoteValue">:ↄ</h3>
                 <button class="quoteButton" onclick="getQuote()">Quote</button>
-                <h3 id="Total">Enter Square Feet</h3>
-                <p></p>
+               
                 
             </div>
         </div>
