@@ -3,6 +3,7 @@ const sections = document.querySelectorAll('h2');
 
 // Function to check which section is in the viewport
 function updateActiveSection() {
+  
   const scrollPosition = window.scrollY;
   const windowHeight = window.innerHeight;
 
@@ -36,6 +37,8 @@ function updateActiveSection() {
 // Function to handle click on sidebar links
 function handleSidebarLinkClick(event) {
   event.preventDefault(); // Prevent the default behavior of the link
+  
+  
   const clickedLink = event.currentTarget;
 
   // Remove 'active' class from all links
@@ -48,7 +51,7 @@ function handleSidebarLinkClick(event) {
   const targetSectionId = clickedLink.getAttribute('href').substring(1);
   const targetSection = document.getElementById(targetSectionId);
   if (targetSection) {
-    const offsetPercentage = 0.6; // Adjust this value as needed (percentage of viewport height)
+    const offsetPercentage = 0.3; // Adjust this value as needed (percentage of viewport height)
     const offset = window.innerHeight * offsetPercentage;
 
     window.scrollTo({
