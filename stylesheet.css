@@ -2,7 +2,7 @@ h1{
     
     text-align: center;
     margin-right: 80px;
-    color: #e751a1;
+    color: #E751A1;
 }
 
 
@@ -36,14 +36,14 @@ button{
     margin-right: 20px;
 }
 .quoteButton{
-    background: #e751a1;
+    background: #E751A1;
     color: black;
 }
 .row{
     border-radius: 20px;
     display: flex;
     flex-flow: inline;
-    background: #e751a1;
+    background: #E751A1;
     width: 700px;
     height: 220px;
     margin: auto;   
