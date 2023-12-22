@@ -1,5 +1,5 @@
 // Get all the section elements
-const sections = document.querySelectorAll('.collumnBig');
+const sections = document.querySelectorAll('h2');
 
 // Function to check which section is in the viewport
 function updateActiveSection() {
@@ -71,7 +71,7 @@ document.querySelectorAll('.sidebar a').forEach(link => {
 // Call the function on page load to set the initial active section
 window.addEventListener('load', () => {
   // Set the "CIB" link as active by default
-  const defaultLink = document.getElementById('cib-link');
+  const defaultLink = document.getElementById('main-items-link');
   if (defaultLink) {
     defaultLink.classList.add('active');
   }
