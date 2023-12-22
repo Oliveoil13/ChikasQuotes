@@ -3,6 +3,9 @@ h1{
     color: pink;
     text-align: center;
 }
+h2{
+    margin: auto;
+}
 body {
   
     background-color: white;
@@ -33,14 +36,19 @@ button{
     background-color: pink;
     color: black;
 }
-.collumn{
+.row{
+    border-radius: 20px;
     display: flex;
-    flex-flow: column;
-    width: 100px;
-    height: 500px;
-    margin: 20px;
+    flex-flow: inline;
     
+    width: 700px;
+    height: 220px;
+    margin: auto;   
+    background: #ae7ab5;
+    margin-bottom: 20px;
+    margin-top: 20px;    
 }
+
 .collumnEnd{
     text-align: center;
     display: flex;
@@ -54,9 +62,16 @@ button{
     top: 120px;
     
 }
-.firstRow{
+.collumn{
     display: flex;
-    flex-flow: inline;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 10px;
+
+}
+.collumnBig{
+    display: flex;
+    flex-flow: column;
 
 }
 .quoteValue{
@@ -65,3 +80,40 @@ button{
     border-radius: 5px;
     margin-top: 100px;
 }
+
+.sidebar {
+    position: fixed; /* Fix the sidebar position on the screen */
+    top: 20; /* Adjust this value as needed, and make sure to add 'px' */
+    left: 0; /* Adjust this value as needed */
+    width: 120px; /* Set the width of the sidebar */
+    height: 100%; /* Make the sidebar full height */
+    background-color: #f2f2f200; /* Background color of the sidebar */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding-top: 20px; /* Adjust spacing from the top */
+  }
+  .sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333; /* Link color */
+  }
+  
+  .sidebar a:hover {
+    background-color: #ddd; /* Background color on hover */
+  }
+  
+  .sidebar a.active {
+    position: relative;
+    background-color: #ddd; 
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px; 
+    height: 100%;
+    background-color: black;
+  }
