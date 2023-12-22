@@ -14,8 +14,19 @@ function updateActiveSection() {
 
     // Adjust this value to determine when the link should be considered active
     const activationThreshold = 0.6; // 50% of the section's height
+    if (scrollPosition === 0) {
+      // Set the "Main Items" link as active
+      const mainItemsLink = document.getElementById('main-items-link');
+      if (mainItemsLink) {
+        mainItemsLink.classList.add('active');
+      }
+      const kitchenLink = document.getElementById('kitchen-additions-link');
+      if (kitchenLink) {
+        kitchenLink.classList.remove('active');
+      }
 
-    if (
+      
+    } else if (
       scrollPosition + windowHeight * activationThreshold >= sectionTop &&
       scrollPosition <= sectionBottom - windowHeight * (1 - activationThreshold)
     ) {
@@ -33,7 +44,6 @@ function updateActiveSection() {
     }
   });
 }
-
 // Function to handle click on sidebar links
 function handleSidebarLinkClick(event) {
   event.preventDefault(); // Prevent the default behavior of the link
