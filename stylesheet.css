@@ -1,5 +1,5 @@
 h1{
-    font-family: Calibri;
+    
     text-align: center;
     
     color: #ab71b1;
@@ -10,7 +10,7 @@ h2{
     margin: auto;
 }
 body {
-  
+    font-family: Calibri;
     background-color: white;
     color: black;
 }
