@@ -1,5 +1,5 @@
 // Get all the section elements
-const sections = document.querySelectorAll('.block-section');
+const sections = document.querySelectorAll('.collumnBig');
 
 // Function to check which section is in the viewport
 function updateActiveSection() {
@@ -44,7 +44,7 @@ function handleSidebarLinkClick(event) {
   // Add 'active' class to the clicked link
   clickedLink.classList.add('active');
 
-  // Scroll to the corresponding section with an offset
+  // Scroll to t#815886esponding section with an offset
   const targetSectionId = clickedLink.getAttribute('href').substring(1);
   const targetSection = document.getElementById(targetSectionId);
   if (targetSection) {

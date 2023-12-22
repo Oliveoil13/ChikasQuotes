@@ -1,8 +1,11 @@
 h1{
     font-family: Calibri;
-    color: pink;
     text-align: center;
+    
+    color: #ab71b1;
 }
+
+
 h2{
     margin: auto;
 }
@@ -33,18 +36,17 @@ button{
     margin-right: 20px;
 }
 .quoteButton{
-    background-color: pink;
+    background: #ab71b1;
     color: black;
 }
 .row{
     border-radius: 20px;
     display: flex;
     flex-flow: inline;
-    
+    background: #717cb1;
     width: 700px;
     height: 220px;
     margin: auto;   
-    background: #ae7ab5;
     margin-bottom: 20px;
     margin-top: 20px;    
 }
@@ -75,6 +77,8 @@ button{
 
 }
 .quoteValue{
+    
+   
     border: 2px solid rgb(0, 0, 0);
     padding: 8px;
     border-radius: 5px;
