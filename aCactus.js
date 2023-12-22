@@ -350,12 +350,14 @@ function getQuote(){
       (ovensvalue * OvenNumbers[ovenLevelvalue]) +
       (washerDryervalue * 50) +
       (cleanDishervalue * 30) +
-      (cleanCabinetsvalue * CabinetsNumbers[emptyCabinetsvalue])
+      (cleanCabinetsvalue * CabinetsNumbers[emptyCabinetsvalue])+
+      (isChildrenvalue * 20) +
+      (isPetsvalue * 20)
       ;
     
     if (quote < 100){
         quote = "$" + 100;
-    }else{
+    }else{ 
         quote = "$" + quote;
     }
     document.getElementById("Total").innerHTML = quote;
