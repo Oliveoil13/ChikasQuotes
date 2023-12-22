@@ -337,7 +337,7 @@ function resetForm() {
     document.getElementById("Total").innerHTML = "Enter Square Feet";
 }
 
-window.addEventListener('beforeunload', resetForm);
+window.addEventListener('beforeunload', resetForm());
 
 //math for the quote
 function getQuote(){
