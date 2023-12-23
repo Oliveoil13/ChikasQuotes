@@ -253,6 +253,7 @@ function resetForm() {
     });
 
     // Reset kitchens
+    kitchensvalue = 1;
     kitchens.value = 1;
 
     // Reset do they have children
@@ -268,12 +269,15 @@ function resetForm() {
     isPetsvalue = 0;
 
     // Reset blinds
+    blindsvalue = 0;
     blinds.value = 0;
 
     // Reset windows
+    windowsvalue = 0;
     windows.value = 0;
 
     // Reset fridges
+    fridgesvalue = 0;
     fridges.value = 0;
 
     // Reset size of fridges
@@ -301,6 +305,7 @@ function resetForm() {
     blindsLevelvalue = 0;
 
     // Reset ovens
+    ovensvalue = 0;
     ovens.value = 0;
 
     // Reset how dirty is oven
@@ -335,6 +340,9 @@ function resetForm() {
 
     // Reset the total quote display
     document.getElementById("Total").innerHTML = "Enter Square Feet";
+
+    //reset quote
+    quote = 0;
 }
 
 window.addEventListener('beforeunload', resetForm());
