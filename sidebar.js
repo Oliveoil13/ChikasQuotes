@@ -24,6 +24,14 @@ function updateActiveSection() {
       if (kitchenLink) {
         kitchenLink.classList.remove('active');
       }
+      const DeepLink = document.getElementById('deep-clean-items-link');
+      if (kitchenLink) {
+        DeepLink.classList.remove('active');
+      }
+      const ExtraLink = document.getElementById('extra-items-link');
+      if (kitchenLink) {
+        ExtraLink.classList.remove('active');
+      }
 
       
     } else if (

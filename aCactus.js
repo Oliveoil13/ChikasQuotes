@@ -175,11 +175,11 @@ blindsLevel.forEach(radio => {
 let ovens = document.querySelector("#Ovens");
 let ovensvalue = 0;
 ovens.addEventListener("input", () => {
-    ovensvalue = parseFloat(fridges.value) || 0;
+    ovensvalue = parseFloat(ovens.value) || 0;
 });
 //how Dirty is oven
 let ovenLevel = document.querySelectorAll('input[name="dirtyOven"]');
-let ovenLevelvalue = 1;
+let ovenLevelvalue = 0;
 
 ovenLevel.forEach(radio => {
     radio.addEventListener("change", () => {
@@ -193,7 +193,7 @@ let washerDryervalue = 0;
 
 washerDryer.forEach(radio => {
     radio.addEventListener("change", () => {
-        washerDryeralue = parseFloat(radio.value) || 0;
+        washerDryervalue = parseFloat(radio.value) || 0;
         
     });
 });
@@ -360,5 +360,6 @@ function getQuote(){
     }else{ 
         quote = "$" + quote;
     }
+
     document.getElementById("Total").innerHTML = quote;
 }
