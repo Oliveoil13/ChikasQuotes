@@ -105,6 +105,9 @@ button{
     text-decoration: none;
     color: #333; /* Link color */
   }
+  .dark-mode .sidebar a:hover{
+    color: #000000;
+  }
   
   .sidebar a:hover {
     background-color: #ddd; /* Background color on hover */
