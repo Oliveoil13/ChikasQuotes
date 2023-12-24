@@ -231,6 +231,7 @@ emptyCabinets.forEach(radio => {
 //resets page
 function resetForm() {
     // Reset square feet
+    squareFeet = 0;
     squareFeetEntry.value = 0;
     
     // Reset type of cleaning

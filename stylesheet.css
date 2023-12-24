@@ -1,7 +1,7 @@
 h1{
     
     text-align: center;
-    margin-right: 80px;
+    margin-right: 5rem;
     color: #E751A1;
 }
 
@@ -29,11 +29,11 @@ button{
 
 .modeButton{
     float: right;
-    margin-right: 20px;
+    margin-right: 0rem;
 }
 .resetButton{
     float: right;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 .quoteButton{
     background: #E751A1;
@@ -44,31 +44,30 @@ button{
     display: flex;
     flex-flow: inline;
     background: #E751A1;
-    width: 700px;
-    height: 220px;
+    width: 40rem;
+    height: 15rem;
     margin: auto;   
-    margin-bottom: 20px;
-    margin-top: 20px;    
+    margin-bottom: 2rem;
+    margin-top: 1rem;    
 }
 
 .collumnEnd{
     text-align: center;
     display: flex;
     flex-flow: column;
-    width: 120px;
-    height: 500px;
-    margin: 20px;
+    width: 7rem;
+    margin: 1rem;
     margin-left: auto;
     position: fixed;
-    right: 80px;
-    top: 120px;
+    right: 5rem;
+    top: 10rem;
     
 }
 .collumn{
     display: flex;
     flex-flow: column;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 0.5rem;
 
 }
 .collumnBig{
@@ -81,27 +80,26 @@ button{
 }
 .quoteValue{
     border: 2px solid rgb(0, 0, 0);
-    padding: 8px;
+    padding: 0rem;
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 6rem;
 }
 .dark-mode .sidebar a{
     color: #ffffff;
 }
 
 .sidebar {
-    position: fixed; /* Fix the sidebar position on the screen */
-    top: 20; /* Adjust this value as needed, and make sure to add 'px' */
-    left: 0; /* Adjust this value as needed */
-    width: 120px; /* Set the width of the sidebar */
-    height: 100%; /* Make the sidebar full height */
-    background-color: #f2f2f200; /* Background color of the sidebar */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    padding-top: 20px; /* Adjust spacing from the top */
+    position: fixed; 
+    top: 8rem; 
+    left: 0rem; 
+    width: 8rem;
+    height: 100%; 
+    background-color: #f2f2f200;
+    overflow-y: auto; 
   }
   .sidebar a {
     display: block;
-    padding: 10px 20px;
+    padding: .5rem 1rem;
     text-decoration: none;
     color: #333; /* Link color */
   }
@@ -124,7 +122,7 @@ button{
     position: absolute;
     left: 0;
     top: 0;
-    width: 3px; 
+    width: 0.25rem; 
     height: 100%;
     background-color: black;
   }
