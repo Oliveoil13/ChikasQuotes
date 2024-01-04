@@ -1,7 +1,7 @@
 h1{
     
     text-align: center;
-    margin-right: 5rem;
+    margin-right: 6vw;
     color: #E751A1;
 }
 
@@ -29,11 +29,11 @@ button{
 
 .modeButton{
     float: right;
-    margin-right: 0rem;
+    margin-right: 1vw;
 }
 .resetButton{
     float: right;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 .quoteButton{
     background: #E751A1;
@@ -44,8 +44,8 @@ button{
     display: flex;
     flex-flow: inline;
     background: #E751A1;
-    width: 40rem;
-    height: 15rem;
+    width: 60vw;
+    height: 18vh;
     margin: auto;   
     margin-bottom: 2rem;
     margin-top: 1rem;    
@@ -59,7 +59,7 @@ button{
     margin: 1rem;
     margin-left: auto;
     position: fixed;
-    right: 5rem;
+    right: 5vw;
     top: 10rem;
     
 }
@@ -125,4 +125,18 @@ button{
     width: 0.25rem; 
     height: 100%;
     background-color: black;
+  }
+  @media only screen and (max-width: 850px) {
+    .sidebar{
+        display: none;
+    }
+    .row{
+        margin-left: 5vw;
+        width: 70vw;
+    }
+    .collumnEnd{
+        right: 0vw;
+        
+        
+    }
   }
