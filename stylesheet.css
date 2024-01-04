@@ -80,9 +80,10 @@ button{
 }
 .quoteValue{
     border: 2px solid rgb(0, 0, 0);
-    padding: 0rem;
+    
     border-radius: 5px;
     margin-top: 6rem;
+    font-size: 2vw;
 }
 .dark-mode .sidebar a{
     color: #ffffff;
