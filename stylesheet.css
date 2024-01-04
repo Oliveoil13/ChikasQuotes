@@ -127,16 +127,38 @@ button{
     background-color: black;
   }
   @media only screen and (max-width: 850px) {
+    input[type=text]{
+        width: 10vw;
+        font-size: 2vw;
+    }
+    #frequency{
+        width: 10vw;
+        font-size: 2vw;
+    }
+    input[type=radio]{
+        
+        height: 2vw;
+    }
+    
+    option{
+        size: 5vw;
+    }
+    body{
+        font-size: 2vw;
+    }
     .sidebar{
         display: none;
     }
     .row{
         margin-left: 5vw;
         width: 70vw;
+        height: 30vw;
     }
     .collumnEnd{
         right: 0vw;
-        
-        
+        width: 12vw;
+    }
+    .quoteButton{
+        font-size: 3vw;
     }
   }
